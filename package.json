@@ -5,21 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "both": "concurrently \"serve -s inotebook/build\" \"node index.js\""
+    "start": "node index.js"
   },
   "author": "Sohan Singh",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "concurrently": "^8.2.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "express-validator": "^7.0.1",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^7.6.2",
-    "serve": "^14.2.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
+    "mongoose": "^7.6.2"
   }
 }
