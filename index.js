@@ -4,7 +4,7 @@ var cors = require("cors");
 
 connectToMongo();
 const app = express();
-const port = process.env.port || 5000
+const PORT = process.env.PORT || 5000
 
 app.use(cors());
 app.use(express.json()); // If you want to use (req.body) You have to use this middlewere
@@ -15,6 +15,6 @@ app.use("/api/notes", require("./routes/notes.js"));
 
 app.get()
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`iNotebook backend started listening on port ${port}`);
 });
