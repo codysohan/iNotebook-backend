@@ -13,8 +13,6 @@ app.use(express.json()); // If you want to use (req.body) You have to use this m
 app.use("/api/auth", require("./routes/auth.js"));
 app.use("/api/notes", require("./routes/notes.js"));
 
-app.get()
-
 app.listen(PORT, () => {
   console.log(`iNotebook backend started listening on port ${PORT}`);
 });
